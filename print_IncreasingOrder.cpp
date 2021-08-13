@@ -1,0 +1,20 @@
+# include<iostream>
+using namespace std ;
+
+void inc(int n){
+    if(n == 0 ){
+        return ;
+    }
+
+    inc(n-1) ;
+    cout << n << " " ;
+}
+int main(){
+
+    int a ;
+
+    cin >> a ;
+    inc(a) ;
+
+    return 0 ;
+}
